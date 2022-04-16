@@ -1,0 +1,29 @@
+@import "./variables";
+header{
+    background: $primary-header-color;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 15vh;
+    z-index: 100;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        h1{
+            color: $primary-header-text-color ;
+        }
+        button{
+            color: $primary-header-text-color;
+            background: #000;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

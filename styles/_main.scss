@@ -1,0 +1,51 @@
+@import "./variables";
+main{
+    margin-top: 16vh;
+    background: rgb(98, 225, 98);
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form{
+        height: 15rem;
+        width: 15rem;
+        background-color: black;
+        color: $primary-header-text-color;
+        padding: 0.5rem;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        display: none;
+        z-index: 999;
+        div{
+            margin: 5px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .layer{
+        height: 100%;
+        width: 100%;
+        z-index: 900;
+        background: black;
+        opacity: 0.6;
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+    }
+
+
+}
+.show{
+    display: block;
+    background-color: #fff;
+    color: black;
+}
+
